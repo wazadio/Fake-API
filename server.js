@@ -5,6 +5,7 @@ const router = jsonServer.router('db.json')
 const middlewares = jsonServer.defaults()
 const port = process.env.PORT || 3000;
 
+
 // Set default middlewares (logger, static, cors and no-cache)
 server.use(middlewares)
 
@@ -17,14 +18,23 @@ server.get('/echo', (req, res) => {
 // You can use the one used by JSON Server
 server.use(jsonServer.bodyParser)
 server.use((req, res, next) => {
-  if (req.method === 'POST') {
-    req.body.createdAt = Date.now()
-    req.body.title = "berubah"
-    console.log(req.body)
+  if (req.method === 'GET') {
+  	req.body.processingCode = req.body.processingCode - 10
   }
   // Continue to JSON Server router
   next()
 })
+
+router.render = (req, res) => {
+  res.jsonp({
+    transactionData: req.body,
+    responseStatus: {
+      "responseCode": 200,
+      "reasonCode": 0,
+      "responseDescription": "success"
+    }
+  })
+}
 
 // Use default router
 server.use(router)

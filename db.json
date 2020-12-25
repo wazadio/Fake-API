@@ -1,73 +1,9 @@
 {
-  "posts": [
-    {
-      "id": 1,
-      "title": "json-server",
-      "author": "typicode"
-    },
-    {
-      "id": 2,
-      "title": "json-server-saya",
-      "author": "Juni"
-    },
-    {
-      "pan": "9360014900000008883",
-      "processingCode": "2111124",
-      "totalAmount": 919191,
-      "acquirerId": "97020488",
-      "issuerId": "97020488",
-      "transmissionDateTime": "0921082022",
-      "localTransactionTime": "082022",
-      "localTransactionDate": "0921",
-      "captureDate": "0921",
-      "additionalData": "PI04Q001CD30SUSAEN                         MC03UMI",
-      "stan": "554461",
-      "refnum": "678615554461",
-      "currency": "360",
-      "terminalId": "000088080000020",
-      "accountFrom": "00199293254461",
-      "accountTo": "6793882254461",
-      "categoryCode": "7011",
-      "settlementAmount": "1350000",
-      "cardholderBillingAmount": "1350000",
-      "settlementConversionrate": "00000111",
-      "cardHolderBillingConvRate": "00000111",
-      "pointOfServiceEntryMode": "011",
-      "cardAcceptorData": {
-        "cardAcceptorTerminalID": "C99",
-        "cardAcceptorName": "IUT MLPT      RINTIS     ",
-        "cardAcceptorCity": "TANGERANG    ",
-        "cardAcceptorCountryCode": "ID"
-      },
-      "settlementCurrencyCode": "702",
-      "cardHolderBillingCurrencyCode": "702",
-      "additionalDataNational": "61051511562070703C1231",
-      "createdAt": 1608876385312,
-      "title": "berubah",
-      "id": 3
-    }
+  "biller": [
+    { "id": 1, "title": "json-server", "author": "typicode" }
   ],
   "comments": [
-    {
-      "id": 1,
-      "title": "json-server",
-      "author": "typicode",
-      "createdAt": 1608871360146
-    },
-    {
-      "id": 2,
-      "title": "json-server",
-      "author": "typicode",
-      "createdAt": 1608874903367
-    },
-    {
-      "id": 3,
-      "title": "berubah",
-      "author": "typicode",
-      "createdAt": 1608876209707
-    }
+    { "id": 1, "body": "some comment", "postId": 1 }
   ],
-  "profile": {
-    "name": "typicode"
-  }
+  "profile": { "name": "typicode" }
 }
