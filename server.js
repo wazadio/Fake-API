@@ -19,7 +19,7 @@ server.get('/echo', (req, res) => {
 server.use(jsonServer.bodyParser)
 server.use((req, res, next) => {
   if (req.method === 'GET') {
-  	req.body.processingCode = req.body.processingCode - 10
+  	req.body.processingCode = (req.body.processingCode - 10).toString()
   }
   // Continue to JSON Server router
   next()
