@@ -4,6 +4,12 @@ Fake API untuk development
 
 install npm dengan cara menginstall node.js
 
+download repo
+atau
+clone repo 
+```bash
+git clone http://github.com/wazadio/Fake-API
+```
 
 install package json-server dengan npm
 ```bash
