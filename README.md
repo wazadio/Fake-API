@@ -8,7 +8,7 @@ download repo
 atau
 clone repo 
 ```bash
-git clone http://github.com/wazadio/Fake-API
+git clone https://github.com/wazadio/Fake-API
 ```
 
 install package json-server dengan npm
