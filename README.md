@@ -6,12 +6,12 @@ install npm dengan cara menginstall node.js
 
 
 install package json-server dengan npm
-'''bash
+```bash
 npm install json-server
-'''
+```
 
 
 jalankan fake server
-'''bash
+```bash
 node server.js
-'''
+```
