@@ -13,7 +13,7 @@ git clone https://github.com/wazadio/Fake-API
 
 install package json-server dengan npm
 ```bash
-npm install json-server
+npm install -g json-server
 ```
 
 
